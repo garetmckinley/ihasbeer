@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "node server.js",
+    "postinstall": "next build"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.1.4",
+    "hedron": "next",
+    "next": "beta",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-ga": "^2.2.0",
+    "react-helmet": "^5.1.3",
+    "react-markdown": "^2.5.0",
+    "styled-components": "^2.0.0"
+  }
+}
