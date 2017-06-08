@@ -1,6 +1,4 @@
-import Markdown from 'components/Markdown'
-
-const post =
+export default
 `
 <img alt="mouse running gif" src="http://imgur.com/vQV1W7B.gif" style="float:right"/>
 
@@ -148,5 +146,3 @@ I plan to write a follow-up article before long with in-depth information on cus
 ## In conclusion
 It's faster to not have to move your hands back and forth from your keyboard to mouse. Who would've thought?
 `
-
-export default () => <Markdown source={post} />

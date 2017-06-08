@@ -1,6 +1,4 @@
-import Markdown from 'components/Markdown'
-
-const post =
+export default 
 `
 [![](http://imgur.com/XiLqt5F.png)](https://gitmoji.carloscuesta.me/)
 
@@ -53,5 +51,3 @@ The problem here of course is terminal support. Which might not be a big deal fo
 
 This is the reason why I believe [gitmoji](https://gitmoji.carloscuesta.me/) is not ready for the limelight yet.
 `
-
-export default () => <Markdown source={post} />
