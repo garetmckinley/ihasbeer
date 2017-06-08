@@ -10,6 +10,7 @@ export default class extends Document {
     return (
       <html lang="en">
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Hedron</title>
           {styleTags}
         </Head>
