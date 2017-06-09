@@ -7,12 +7,14 @@
     "dev": "next",
     "build": "next build",
     "start": "node server.js",
-    "postinstall": "next build"
+    "postinstall": "next build",
+    "format": "prettier --single-quote --trailing-comma es5 --no-semi --write ./**/*.js"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.4",
     "hedron": "next",
     "next": "beta",
+    "prettier": "^1.4.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-ga": "^2.2.0",

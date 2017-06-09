@@ -19,10 +19,9 @@ const Wrapper = styled.div`
   }
 `
 
-const Markdown = ({ ...props }) => (
+const Markdown = ({ ...props }) =>
   <Wrapper>
     <ReactMarkdown {...props} />
   </Wrapper>
-)
 
 export default Markdown

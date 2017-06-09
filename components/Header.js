@@ -8,19 +8,21 @@ const steps = 10
 const size = 60
 
 const glitchAnim = keyframes`
-  ${[...Array(steps)].map((f, i) => (
-    `${i * (100 / steps)}% {
+  ${[...Array(steps)].map(
+    (f, i) =>
+      `${i * (100 / steps)}% {
       clip: rect(${randInt(0, size)}px, 9999px, ${randInt(0, size)}px, 0);
     }`
-  ))}
+  )}
 `
 
 const glitchAnim2 = keyframes`
-  ${[...Array(steps)].map((f, i) => (
-    `${i * (100 / steps)}% {
+  ${[...Array(steps)].map(
+    (f, i) =>
+      `${i * (100 / steps)}% {
       clip: rect(${randInt(0, size)}px, 9999px, ${randInt(0, size)}px, 0);
     }`
-  ))}
+  )}
 `
 
 const Wrapper = styled(Box)`
@@ -68,12 +70,11 @@ const Glitch = styled.div`
   }
 `
 
-const Header = ({ glitch, children, ...props }) => (
+const Header = ({ glitch, children, ...props }) =>
   <Wrapper>
     <Glitch class="glitch" data-text={glitch} {...props}>
       <a href="/">{children}</a>
     </Glitch>
   </Wrapper>
-)
 
 export default Header
